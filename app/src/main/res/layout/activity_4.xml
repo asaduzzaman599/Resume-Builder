@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skills"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skill"/>
+    <TextView
+        android:id="@+id/experince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Experiences"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_below="@+id/skills"
+        android:hint="etc"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/xperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="etc"
+        android:layout_below="@+id/experince"/>
+    <Button
+        android:id="@+id/infoSubBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next >"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/xperience" />
+
+</RelativeLayout>

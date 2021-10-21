@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        >
+        <ImageView
+
+            android:layout_margin="30dp"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:id="@+id/image2"/>
+        <TextView
+            android:id="@+id/dname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"
+            android:textColor="#ff4500"
+            android:layout_below="@+id/image2"
+             />
+        <TextView
+            android:id="@+id/jbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IT Specialist"
+            android:textSize="20dp"
+            android:layout_below="@+id/dname"
+            />
+        <TextView
+            android:id="@+id/demail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asaduzzamansoumit@gmail.com"
+            android:textSize="20dp"
+            android:layout_below="@+id/jbt"
+            />
+        <TextView
+            android:id="@+id/dphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01682412636"
+            android:textSize="20dp"
+            android:layout_below="@+id/demail"
+            />
+        <TextView
+            android:id="@+id/dnatonality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_below="@+id/dphone"
+            />
+        <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/dnatonality"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Educational Infomation"
+            android:textColor="#000000"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/schln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Bhasantek High School"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/clgn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Cmabrian College "
+                android:layout_below="@id/schln"/>
+            <TextView
+                android:id="@+id/versityn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Studing Independent University Bangladesh In CSE"
+                android:layout_below="@+id/clgn"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/l1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/l2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Skills                         "
+                android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/skilln"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lots of skills "
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/l2"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/l3"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Experinced                "
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/experincen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lots of Experience "
+                android:layout_alignParentTop="true"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_below="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/createCv"
+            android:layout_below="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/pdf"
+            android:text="PDF"
+            android:layout_below="@+id/createCv"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</ScrollView>
